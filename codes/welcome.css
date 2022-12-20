@@ -1,0 +1,422 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*
+@media screen and (max-width: 500px) {
+    .batch_collection {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+        background-color: peru;
+        padding: 10px;
+    }
+}*/
+body {
+  /*width: 100px;
+  height: 100px;*/
+  /*padding: 20px 100px;*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #D16BA5, #86A8E7, #5FFBF1);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/*
+.container {
+    width: 80%;
+    height: 500px;
+    background-color: yellow;
+    /*background: rgba(255,255,255,.3);
+    /*border: 1px solid rgba(255, 255, 255, .18);*/
+/*    border: 1px solid rgba(255, 255, 255, .3);
+
+
+    padding: 15px;
+    /*margin-right: 20px;*/
+/*    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.project_batch_box {
+    width: 90%;
+    height: 100%;
+    background-color: greenyellow;
+
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.bat {
+    text-decoration: none;
+    color: black;
+    font-size: 200%;
+    padding: 25px;
+    background-color: rgb(253, 212, 159);
+    box-sizing: border-box;
+}
+
+.bat a{
+
+    box-sizing: border-box;
+}
+
+.batch_collection {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    background-color: peru;
+    padding: 10px;
+}
+
+.bat {
+    text-align: center;
+}*/
+.nav_gmor {
+  width: 60%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.nav_bar_box {
+  width: 100%;
+  height: auto;
+  /*background-color: gainsboro;*/
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+.nav {
+  width: 150px;
+  height: auto;
+  /*background-color: yellowgreen;*/
+  color: #000;
+  margin: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.nav:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project_batches_box {
+  /*background-color: yellowgreen;*/
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.project_batches_box_gmor {
+  /*background-color: lightcoral;*/
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+  padding: 10px;
+  font-size: 150%;
+  padding-left: 30px;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.project_batch_box {
+  width: 60%;
+  padding: 20px;
+  /*background-color: #c29024;*/
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+  margin-top: 20px; /*****/
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.batch_collection {
+  width: 100%;
+  height: auto;
+  /*background-color: gainsboro;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.bat {
+  width: 200px;
+  height: auto;
+  /*background-color: yellowgreen;*/
+  color: #000;
+  margin: 30px;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  padding: 25px;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.bat:hover {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.not_active {
+  pointer-events: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 450px) {
+  .nav_gmor {
+    width: 80%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  .nav_bar_box {
+    width: 100%;
+    height: auto;
+    /*background-color: gainsboro;*/
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-top: 20px;
+    border-radius: 25px;
+  }
+  .nav {
+    width: 100px;
+    height: auto;
+    /*background-color: yellowgreen;*/
+    color: #000;
+    margin: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  .project_batches_box_gmor {
+    /*background-color: lightcoral;*/
+    padding: 10px;
+    font-size: 120%;
+    padding-left: 30px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  .bat {
+    width: 100px;
+    height: auto;
+    /*background-color: yellowgreen;*/
+    color: #000;
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  .project_batch_box {
+    width: 70%;
+    padding: 20px;
+    /*background-color: #c29024;*/
+    margin-top: 20px; /*****/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project_batches_box_gmor {
+    /*background-color: lightcoral;*/
+    padding: 10px;
+    font-size: 120%;
+    padding-left: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .bat {
+    width: 100px;
+    height: auto;
+    /*background-color: yellowgreen;*/
+    color: #000;
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  .project_batch_box {
+    width: 90%;
+    padding: 20px;
+    /*background-color: #c29024;*/
+    margin-top: 20px; /*****/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 800px) {
+  .project_batches_box_gmor {
+    /*background-color: lightcoral;*/
+    padding: 10px;
+    font-size: 120%;
+    padding-left: 30px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  .bat {
+    width: 100px;
+    height: auto;
+    /*background-color: yellowgreen;*/
+    color: #000;
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  .project_batch_box {
+    width: 90%;
+    padding: 20px;
+    /*background-color: #c29024;*/
+    margin-top: 20px; /*****/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .nav_gmor {
+    width: 70%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  .nav_bar_box {
+    width: 100%;
+    height: auto;
+    /*background-color: gainsboro;*/
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-top: 20px;
+    border-radius: 25px;
+  }
+  .nav {
+    width: 100px;
+    height: auto;
+    /*background-color: yellowgreen;*/
+    color: #000;
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  .project_batches_box_gmor {
+    /*background-color: lightcoral;*/
+    padding: 10px;
+    font-size: 120%;
+    padding-left: 30px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  .bat {
+    width: 100px;
+    height: auto;
+    /*background-color: yellowgreen;*/
+    color: #000;
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+  .project_batch_box {
+    width: 70%;
+    padding: 20px;
+    /*background-color: #c29024;*/
+    margin-top: 20px; /*****/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+}
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.row:after,
+.group:after {
+  clear: both;
+}
+
+.row,
+.group {
+  zoom: 1;
+}
+
+/*# sourceMappingURL=welcome.css.map */
